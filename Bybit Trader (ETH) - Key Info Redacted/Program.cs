@@ -212,7 +212,7 @@ namespace Bybit_Trader__ETH_
                         }
                         if (aF.CurrentPosFilled && aF.LastAsk - 0.05 >= (aF.CurrentPositionEntry + 7 * aF.beginSlPrice / 8) && !aF.closingPos)
                         {
-                            aF.ClosePosition();
+                            aF.ClosePosition(); // Closes position via moving limit orders to take advantage of 0.25% rebate
                         }
                         if (DateTimeOffset.FromUnixTimeSeconds(DateTime.UtcNow.Second).Second % 60 == 0 && DateTime.UtcNow.AddSeconds(-2) > lastAWSPing)
                         {
