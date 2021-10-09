@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Bybit_Trader__ETH_": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}
